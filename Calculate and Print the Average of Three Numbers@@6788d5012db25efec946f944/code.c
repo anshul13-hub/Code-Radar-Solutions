@@ -8,7 +8,7 @@ int main ()
     average = sum / 3 ;
 
     scanf("%f %f %f", &a ,&b ,&c);
-    printf("Average:%.2f",average);
+    printf("Average:%d",average);
     return 0;
 
 }
