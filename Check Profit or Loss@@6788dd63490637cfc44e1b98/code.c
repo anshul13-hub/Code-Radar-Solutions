@@ -7,9 +7,13 @@ int main ()
     {
         printf("%d",Profit);
     }
-    else 
+    else if(cost price > selling price)
     {
         printf("%d",Loss);
+    }
+    else 
+    {
+        printf("No Profit Loss");
     }
     return 0;
 }
