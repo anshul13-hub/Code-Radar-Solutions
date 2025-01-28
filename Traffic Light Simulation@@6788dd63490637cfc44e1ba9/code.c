@@ -9,7 +9,7 @@ int main ()
     }
     else if(ch=='G')
     {
-        printf("Slow Down");
+        printf("Go");
     }
     else 
     {
