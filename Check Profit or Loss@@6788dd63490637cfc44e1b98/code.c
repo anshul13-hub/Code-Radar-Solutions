@@ -1,15 +1,15 @@
 #include <stdio.h>
 int main ()
 {
-    int selling_price,cost_price;
-    scanf("%d %d",&selling_price,&cost_price);
+    int cost_price,selling_price_price;
+    scanf("%d %d",&cost_price,&selling_price);
     if(selling_price > cost_price)
     {
-        printf("%d",Profit);
+        printf("Profit");
     }
     else if(cost_price > selling_price)
     {
-        printf("%d",Loss);
+        printf("Loss");
     }
     else 
     {
