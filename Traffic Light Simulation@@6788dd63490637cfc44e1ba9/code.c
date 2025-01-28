@@ -3,11 +3,11 @@ int main()
 {
     char ch;
     scanf("%c",&ch);
-    if(ch=='R')
+    if(ch =='R')
     {
         printf("Stop\n");
     }
-    else if(ch=='G')
+    else if(ch =='G')
     {
         printf("Go\n");
     }
