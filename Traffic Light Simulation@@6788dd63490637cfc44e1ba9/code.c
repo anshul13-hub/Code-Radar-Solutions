@@ -16,6 +16,6 @@ int main()
     {
         printf("Invalid input\n");
     }
-    return 0;
 
+    return 0;
 }
