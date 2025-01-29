@@ -13,7 +13,7 @@ int main()
     }
     else
     {
-        printf("Scalence");
+        printf("Scalene");
     }
     return 0;
 
