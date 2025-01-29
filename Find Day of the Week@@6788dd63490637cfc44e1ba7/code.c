@@ -2,16 +2,16 @@
 int main ()
 {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     if(n==1)
     {
         printf("Monday\n");
     }
-    else if(n==2)
+    else if(n == 2)
     {
         printf("Tuesday\n");
     }
-    else if(n==3)
+    else if( n==3 )
     {
         printf("Wednesday\n");
     }
