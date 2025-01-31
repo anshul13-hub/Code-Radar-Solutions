@@ -2,6 +2,7 @@
 int main ()
 {
     char ch ;
+    scanf("%c",&ch);
     if(ch=='A')
     {
         printf("Excellent");
@@ -21,6 +22,10 @@ int main ()
     else if(ch=='F')
     {
         printf("Fail")
+    }
+    else
+    {
+        printf("Invalid grade");
     }
     
     return 0;
