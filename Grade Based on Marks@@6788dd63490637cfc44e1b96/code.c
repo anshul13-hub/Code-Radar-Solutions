@@ -19,14 +19,11 @@ int main ()
     {
         printf("D\n");
     }
-    else 
+    else if 
     {
         printf("F\n");
     }
-    else
-    {
-        printf("error");
-    }
+   
     return 0;
 }
 
