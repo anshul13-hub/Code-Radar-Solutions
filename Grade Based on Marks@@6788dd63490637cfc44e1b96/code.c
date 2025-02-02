@@ -5,23 +5,23 @@ int main ()
     scanf("%d",&n);
     if(n>=90)
     {
-        printf('A');
+        printf("A\n");
     }
     else if(n>=80&&n<90)
     {
-        printf('B');
+        printf("B\n");
     }
     else if(n>=70&&n<80)
     {
-        printf('C');
+        printf("C\n");
     }
     else if(n>=60&&n<70)
     {
-        printf('D');
+        printf("D\n");
     }
     else 
     {
-        printf('F');
+        printf("F\n");
     }
     else
     {
