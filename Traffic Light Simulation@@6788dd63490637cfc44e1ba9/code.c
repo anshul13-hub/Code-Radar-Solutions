@@ -2,7 +2,7 @@
 int main()
 {
     char ch;
-    scanf("%c",&ch);
+    scanf("%c", &ch);
 
     if(ch == 'R')
     {
@@ -12,7 +12,11 @@ int main()
     {
         printf("Go\n");
     }
-    else 
+    else if(ch=='Y')
+    {
+        printf("Slow Down");
+    }
+    else
     {
         printf("Invalid input\n");
     }
