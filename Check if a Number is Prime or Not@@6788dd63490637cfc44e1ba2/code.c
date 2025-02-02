@@ -4,13 +4,26 @@ int main ()
 {
     int n ;
     scanf("%d",&n);
-    if(n%2==0)
+    if(n<=1)
     {
-        printf("Not Prime");
+        isPrime = 0;
+
+    }
+    for(i =2;i*i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            isPrime=0;
+            break;
+        }
+    }
+    if(isPrime)
+    {
+        printf("Prime\n");
     }
     else
     {
-        printf("Prime");
+        printf("Not Prime\n");
     }
     return 0;
 }
