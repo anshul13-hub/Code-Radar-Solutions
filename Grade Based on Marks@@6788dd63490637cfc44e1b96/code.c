@@ -19,7 +19,7 @@ int main ()
     {
         printf('D');
     }
-    else 
+    else if(n<60)
     {
         printf('F');
     }
