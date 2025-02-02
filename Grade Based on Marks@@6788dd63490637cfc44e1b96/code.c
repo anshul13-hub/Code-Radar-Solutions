@@ -19,7 +19,7 @@ int main ()
     {
         printf("D\n");
     }
-    else if 
+    else  
     {
         printf("F\n");
     }
