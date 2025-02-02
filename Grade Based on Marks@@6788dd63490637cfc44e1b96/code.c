@@ -23,6 +23,10 @@ int main ()
     {
         printf('F');
     }
+    else
+    {
+        printf("error");
+    }
     return 0;
 }
 
