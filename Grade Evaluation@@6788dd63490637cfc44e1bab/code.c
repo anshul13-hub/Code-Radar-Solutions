@@ -21,7 +21,7 @@ int main ()
     }
     else if(ch=='F')
     {
-        printf("Fail\n")
+        printf("Fail\n");
     }
     else
     {
