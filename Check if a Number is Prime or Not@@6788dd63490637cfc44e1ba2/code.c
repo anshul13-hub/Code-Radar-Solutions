@@ -2,7 +2,7 @@
 int main ()
 
 {
-    int n,i,isPrime ;
+    int n,i,isPrime=1 ;
     scanf("%d", &n);
     if(n<=1)
     {
