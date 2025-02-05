@@ -7,13 +7,10 @@ int main ()
     {
         for(int j =1;j<=N;j++)
         {
-            for(int j = 1 ; j<=i;j++)
-            {
-                printf("*");
-            }
-            printf("\n");
+            printf("*");
         }
-        
+        printf("\n");
     }
     return 0;
+
 }
