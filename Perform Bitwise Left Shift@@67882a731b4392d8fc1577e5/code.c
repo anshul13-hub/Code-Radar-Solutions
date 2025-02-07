@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main ()
 {
-    int n,positions;
+    int n,positions,result;
     scanf("%d %d",&n,&positions);
-    int result = n << positions;
+    result = n << positions;
     printf(result);
     return 0;
 }
