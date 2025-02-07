@@ -1,8 +1,7 @@
 #include <stdio.h>
 int main ()
 {
-    int n,num,result,mask;
-    scanf("%d %d ",&n,&num);
+    int num,n,result,mask;
     mask = 1 << n ;
     result = num | mask ;
     printf("%d",result);
