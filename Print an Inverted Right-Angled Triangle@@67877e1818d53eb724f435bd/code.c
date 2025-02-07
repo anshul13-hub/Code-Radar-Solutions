@@ -2,16 +2,14 @@
 int main ()
 {
     int N ;
-    scanf("%d",&N)
-    
-        for(int i = N; i>=1;i--)
+    scanf("%d",&N);
+    for(int i = N;i<=1;i--)
+    {
+        for(int j = 1; j<=i;j++)
         {
-            for(int j = 1; j<=1;j++)
-            {
-                printf("*");
-            }
-            printf("\n");
-            
+            printf("*");
         }
-        return 0;
+        printf("\n");
     }
+    return 0;
+}
