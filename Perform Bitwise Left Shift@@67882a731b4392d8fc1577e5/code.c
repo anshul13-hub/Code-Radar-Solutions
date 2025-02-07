@@ -5,4 +5,5 @@ int main ()
     scanf("%d %d",&n,&positions);
     int result = n << positions;
     printf(result);
+    return 0;
 }
