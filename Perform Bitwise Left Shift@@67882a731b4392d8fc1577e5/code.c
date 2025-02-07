@@ -2,8 +2,8 @@
 int main ()
 {
     int n,positions,result;
-    scanf("%d %d",&n,&positions);
+    scanf("%d %d", &n, &positions);
     result = n << positions;
-    printf(result);
+    printf("%d",result);
     return 0;
 }
