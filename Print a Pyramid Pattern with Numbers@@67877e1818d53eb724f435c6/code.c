@@ -1,8 +1,7 @@
 #include <stdio.h>
 int main ()
 {
-    int N;
-    int i,j,k;
+    int i,j,k,N;
     scanf("%d",N);
     for(i=1;i<=N;i++)
     {
@@ -10,7 +9,7 @@ int main ()
         {
             printf(" ");
         }
-        for(k=1;k<=2*N-1;k++)
+        for(k=1;k<=2*i-1;k++)
         {
             printf("%d ",i);
         }
