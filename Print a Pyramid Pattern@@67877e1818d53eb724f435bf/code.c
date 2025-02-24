@@ -6,11 +6,11 @@ int main ()
     scanf("%d",&N);
     for(i=1;i<=N;i++)
     {
-        for(j=1;j<=2*N-i;j++)
+        for(j=1;j<=N-i;j++)
         {
             printf(" ");
         }
-        for(k=1;k<=N-i;k++)
+        for(k=1;k<=2*i-1;k++)
         {
             printf("*");
         }
