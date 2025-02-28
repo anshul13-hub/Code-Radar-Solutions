@@ -15,10 +15,10 @@ int main ()
     for(i=1;i<=N;i++)
     {
        if(arr[i]<min){
-        arr[i]= min;
+        min= arr[i];
        }
        if(arr[i]>max){
-        arr[i] = max ;
+        max = arr[i] ;
        }
     }
     printf("%d %d",min,max);
