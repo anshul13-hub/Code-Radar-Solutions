@@ -3,7 +3,7 @@ int main ()
 {
     int N ,i;
     scanf("%d",&N);
-    int min=arr[0],max=[0];
+    int min=arr[0],max=arr[0];
     int arr[N];
     for(i=1;i<=N;i++)
     {
