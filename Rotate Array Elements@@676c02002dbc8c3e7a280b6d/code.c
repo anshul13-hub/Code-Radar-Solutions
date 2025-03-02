@@ -1,39 +1,39 @@
 #include <stdio.h>
 int main ()
 {
-    int N;
+    int N,K;
     scanf("%d",&N);
     int arr[N];
-    int K;
-    scanf("%d",&K);
-    K= K%N;
-    if(K!=0)
-    {
-        for(int i = 0 ;i<N/2;i++)
-        {
-            int temp = arr[i];
-            arr[i] = arr[N-i-1];
-            arr[N-i-1] = temp ;
-
-        }
-        for(int i = 0 ;i<K/2;i++)
-        {
-            int temp = arr[i];
-            arr[i] = arr[K-i-1];
-            arr[K-i-1] = temp ;
-
-        }
-        for(int i = 0 ;i<(N+K)/2;i++)
-        {
-            int temp = arr[i];
-            arr[i] = arr[(N+K)-i-1];
-            arr[(N+K)-i-1] = temp ;
-
-        }
-    }
     for(int i = 0;i<N;i++)
+
     {
-        printf("%d ",arr[i]);
+        scanf("%d",&arr[i]);
+
     }
+    K = K % N ;
+    for(int i = 0;i<N/2;i++){
+        int temp = arr[i];
+        arr[i] = arr[N-1-i];
+        arr[N-1-i] = temp ;
+
+    }
+    for(int i = 0;i<K/2;i++){
+        int temp = arr[i];
+        arr[i] = arr[K-1-i];
+        arr[K-1-i] = temp ;
+
+    }
+    for(int i = K;i<(N+K)/2;i++){
+        int temp = arr[i];
+        arr[i] = arr[n-1-(i-K)];
+        arr[N-1-(i-K)] = temp ;
+
+    }
+
+    for (int i = 0; i < N; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
     return 0;
 }
