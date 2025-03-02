@@ -16,7 +16,7 @@ int main ()
             arr[N-i-1] = temp ;
 
         }
-        for(int i = 0 ;i<k/2;i++)
+        for(int i = 0 ;i<K/2;i++)
         {
             int temp = arr[i];
             arr[i] = arr[K-i-1];
@@ -36,7 +36,4 @@ int main ()
         printf("%d ",arr[i]);
     }
     return 0;
-}
-
-    }
 }
