@@ -25,7 +25,7 @@ int main ()
     }
     for(int i = K;i<(N+K)/2;i++){
         int temp = arr[i];
-        arr[i] = arr[n-1-(i-K)];
+        arr[i] = arr[N-1-(i-K)];
         arr[N-1-(i-K)] = temp ;
 
     }
