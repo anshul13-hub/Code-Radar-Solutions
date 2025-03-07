@@ -10,11 +10,11 @@ int isPrime(int num) {
 }
 
 int main() {
-    int t; // Number of inputs
+    int t,num; // Number of inputs
     scanf("%d", &t);
     
     while (t--) {
-        int num;
+         
         scanf("%d", &num);
         printf("%d\n", isPrime(num));
     }
