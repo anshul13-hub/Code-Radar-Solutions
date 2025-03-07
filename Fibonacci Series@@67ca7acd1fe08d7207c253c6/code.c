@@ -2,9 +2,9 @@
 
 // Function to generate and print the Fibonacci series
 void fibonacciSeries(int N) {
-    // Handle the edge case for when n is 1 or less
+    // Handle the edge case for when N is 1 or less
     if (N >= 1) {
-        printf("@");  // First term is "@"
+        printf("0");  // First term is "@"
     }
 
     if (N >= 2) {
