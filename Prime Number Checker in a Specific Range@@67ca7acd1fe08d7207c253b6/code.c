@@ -3,11 +3,11 @@
 
 // Function to check if a number is prime
 int isPrime(int num) {
-    if(num <= 1) {
-        return 0;
+    if (num <= 1) {
+        return 0;  // Not prime
     }
-    for(int i = 2; i <= sqrt(num); i++) {
-        if(num % i == 0) {
+    for (int i = 2; i <= sqrt(num); i++) {
+        if (num % i == 0) {
             return 0;  // Not a prime number
         }
     }
@@ -34,8 +34,12 @@ void printPrimesInRange(int a, int b) {
 
 int main() {
     int a, b;
+
+    // Input range a and b
+    printf("Enter the range (a and b): ");
     scanf("%d %d", &a, &b);
 
+    // Print prime numbers in the given range
     printPrimesInRange(a, b);
 
     return 0;
