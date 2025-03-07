@@ -32,7 +32,7 @@ void printPrimesInRange(int a, int b) {
     printf("\n");
 }
 
-int main() {
+int mian() {
     int a, b;
 
     // Input range a and b
