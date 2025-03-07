@@ -1,4 +1,5 @@
 #include <stdio.h>
+int main (){
 
 // Function to generate and print the Fibonacci series
 void fibonacciSeries(int n) {
@@ -23,8 +24,6 @@ void fibonacciSeries(int n) {
 
     printf("\n");  // Move to the next line after printing the series
 }
-#include <stdio.h>
-int main() {
     int n;
 
     // Read the number of terms
