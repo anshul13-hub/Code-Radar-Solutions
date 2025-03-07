@@ -19,7 +19,12 @@ int main (){
     while(t--){
         int num ;
         scanf("%d",&num);
-        printf("%d\n",isPrime(num));
+        if(isPrime(num)){
+            printf("1\n");
+        }
+        else{
+            printf("0\n");
+        }
     }
     return 0;
 }
