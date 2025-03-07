@@ -4,9 +4,9 @@
 void fibonacciSeries(int N) {
     int first = 0, second = 1, next;
 
-    // Special cases for n = 1
+    // Special case for N = 1
     if (N == 1) {
-        printf("%d", first);
+        printf("%d\n", first);
         return;
     }
 
@@ -26,17 +26,7 @@ void fibonacciSeries(int N) {
 
 int main() {
     int N;
-
-    // Read the number of terms
     scanf("%d", &N);
-
-    // Validate input
-    if (N <= 0) {
-        printf("Invalid input\n");
-        return 0;
-    }
-
-    // Call the fibonacciSeries function
     fibonacciSeries(N);
 
     return 0;
