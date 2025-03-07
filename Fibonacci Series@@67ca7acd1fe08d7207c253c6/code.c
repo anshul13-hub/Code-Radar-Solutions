@@ -23,7 +23,7 @@ void fibonacciSeries(int n) {
 
     printf("\n");  // Move to the next line after printing the series
 }
-
+#include <stdio.h>
 int main() {
     int n;
 
