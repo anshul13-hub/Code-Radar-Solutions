@@ -5,7 +5,6 @@ int main ()
     int N,K;
     scanf("%d", &N);
     int arr[N];
-    printf("enter elements of array");
     for(int i = 0;i<N;i++)
     {
         scanf("%d",&arr[i]);
@@ -32,7 +31,7 @@ int main ()
 
     }
     for (int i = 0; i < N; i++) {
-        printf("%d ", arr[i]);
+        printf("%d\n ", arr[i]);
     }
     printf("\n");
 
