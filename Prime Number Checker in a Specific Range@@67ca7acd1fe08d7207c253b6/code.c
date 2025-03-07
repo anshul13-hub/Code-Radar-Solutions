@@ -26,7 +26,8 @@ void printPrimesInRange(int a, int b)
     }
     printf("\n");
 }
-int main (){
+
+int main () {
     int a , b;
     scanf("%d %d", &a, &b);
     printPrimesInRange(a,b);
