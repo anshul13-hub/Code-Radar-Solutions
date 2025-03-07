@@ -1,18 +1,21 @@
 #include <stdio.h>
-int main (){
 
 // Function to generate and print the Fibonacci series
 void fibonacciSeries(int n) {
-    // Handle the edge case for when n is 1 or less
-    if (n >= 1) {
-        printf("0");  // First term is 0
+    // Edge case when n is 1
+    if (n == 1) {
+        printf("0\n");  // Print only the first Fibonacci number
+        return;
     }
 
-    if (n >= 2) {
-        printf(" 1");  // Second term is 1
-    }
-
+    // Handle the edge case for when n is at least 2
     int first = 0, second = 1, next;
+    printf("%d", first);  // First term is 0
+
+    // For the second term, print 1
+    if (n > 1) {
+        printf(" %d", second);  // Second term is 1
+    }
 
     // Generate Fibonacci numbers starting from the 3rd term
     for (int i = 3; i <= n; i++) {
@@ -24,6 +27,8 @@ void fibonacciSeries(int n) {
 
     printf("\n");  // Move to the next line after printing the series
 }
+
+int main() {
     int n;
 
     // Read the number of terms
