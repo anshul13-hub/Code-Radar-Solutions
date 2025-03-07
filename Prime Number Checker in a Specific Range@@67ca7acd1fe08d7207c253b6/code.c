@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+
 int isPrime(int num){
     if(num <=1)
     {
@@ -12,25 +13,30 @@ int isPrime(int num){
     }
     return 1;
 }
-void printPrimesInRange(int a, int b)
-{
+
+void printPrimesInRange(int a, int b) {
     int foundPrime = 0;
-    for(int i = a;i<=b;i++){
-        if(isPrime(i)){
-            printf("%d ",i);
+
+    for (int i = a; i <= b; i++) {
+        if (isPrime(i)) {
+            printf("%d ", i);  // Printing the prime number i, not 1
             foundPrime = 1;
         }
     }
-    if(!foundPrime){
+
+    if (!foundPrime) {
         printf("No prime numbers");
     }
+
     printf("\n");
 }
 
-int main () {
-    int a , b;
-    scanf("%d %d", &a, &b);
-    printPrimesInRange(a,b);
-    return 0;
+int main() {
+    int a, b;
 
+    scanf("%d %d", &a, &b);
+
+    printPrimesInRange(a, b);
+
+    return 0;
 }
