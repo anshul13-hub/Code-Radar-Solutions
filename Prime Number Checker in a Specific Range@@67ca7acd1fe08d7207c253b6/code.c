@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 int printPrimesInRange(int num){
     if(num <=1)
     {
@@ -16,5 +17,5 @@ int main (){
     scanf("%d %d", &a, &b);
     printPrimesInRange(a,b);
     return 0;
-    
+
 }
