@@ -1,47 +1,43 @@
 #include <stdio.h>
 
 // Function to generate and print the Fibonacci series
-void fibonacciSeries(int n) {
-    // Edge case when n is 1
-    if (n == 1) {
-        printf("0\n");  // Print only the first Fibonacci number
+void fibonacciSeries(int N) {
+    int first = 0, second = 1, next;
+
+    // Special cases for n = 1
+    if (N == 1) {
+        printf("%d", first);
         return;
     }
 
-    // Handle the edge case for when n is at least 2
-    int first = 0, second = 1, next;
-    printf("%d", first);  // First term is 0
+    // Print the first two terms
+    printf("%d %d", first, second);
 
-    // For the second term, print 1
-    if (n > 1) {
-        printf(" %d", second);  // Second term is 1
+    // Print the remaining terms
+    for (int i = 3; i <= N; i++) {
+        next = first + second;
+        printf(" %d", next);
+        first = second;
+        second = next;
     }
 
-    // Generate Fibonacci numbers starting from the 3rd term
-    for (int i = 3; i <= n; i++) {
-        next = first + second;  // Fibonacci rule: next = sum of the previous two
-        printf(" %d", next);     // Print the next Fibonacci number
-        first = second;          // Update first for the next iteration
-        second = next;           // Update second for the next iteration
-    }
-
-    printf("\n");  // Move to the next line after printing the series
+    printf("\n");
 }
 
 int main() {
-    int n;
+    int N;
 
     // Read the number of terms
-    scanf("%d", &n);
+    scanf("%d", &N);
 
     // Validate input
-    if (n <= 0) {
+    if (N <= 0) {
         printf("Invalid input\n");
         return 0;
     }
 
     // Call the fibonacciSeries function
-    fibonacciSeries(n);
+    fibonacciSeries(N);
 
     return 0;
 }
