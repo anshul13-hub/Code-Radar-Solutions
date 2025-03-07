@@ -32,15 +32,3 @@ void printPrimesInRange(int a, int b) {
     printf("\n");
 }
 
-int main(){
-    int a, b;
-
-    // Input range a and b
-    printf("Enter the range (a and b): ");
-    scanf("%d %d", &a, &b);
-
-    // Print prime numbers in the given range
-    printPrimesInRange(a, b);
-
-    return 0;
-}
