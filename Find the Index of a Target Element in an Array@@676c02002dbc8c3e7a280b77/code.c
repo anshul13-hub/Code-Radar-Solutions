@@ -12,10 +12,11 @@ int main() {
     for(int i = 0; i < N; i++) {
         if(arr[i] == T) {
            int found = i; 
+           printf(i);
           //  break;  
         }
         else{
-            return -1;
+            printf("-1");
         }
     }
     // if(found !=-1) {
