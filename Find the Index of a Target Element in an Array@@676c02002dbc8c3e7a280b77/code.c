@@ -17,10 +17,10 @@ int main() {
     }
     if(found !=-1) {
     
-        printf("%d\n", found + 1);
+        printf("%d", found + 1);
     } else {
         
-        printf("-1\n");
+        printf("-1");
     }
 
     return 0;
