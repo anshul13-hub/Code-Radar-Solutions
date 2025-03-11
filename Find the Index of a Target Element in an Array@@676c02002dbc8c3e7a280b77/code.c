@@ -29,11 +29,7 @@ int main() {
     }
 
     // If no occurrences of the target element were found, print -1
-    if (!found) {
-        printf("-1\n");
-    } else {
-        printf("\n");  // If found, print a new line after the indices
-    }
+    
 
     return 0;
 }
