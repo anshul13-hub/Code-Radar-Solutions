@@ -19,6 +19,6 @@ int main ()
             break;
         }
     }
-    printf("%d\n",i+1);
+    printf("%d\n",foundindx+1);
 
 }
