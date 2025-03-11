@@ -17,7 +17,7 @@ int main() {
     }
     if(found !=-1) {
     
-        printf("%d", found + 1);
+        printf("%d", found);
     } else {
         
         printf("-1");
