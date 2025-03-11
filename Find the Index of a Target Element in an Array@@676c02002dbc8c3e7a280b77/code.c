@@ -17,5 +17,5 @@ int main ()
             break;
         }
     }
-    printf("%d\n",foundindex);
+    printf("%d\n",i);
 }
