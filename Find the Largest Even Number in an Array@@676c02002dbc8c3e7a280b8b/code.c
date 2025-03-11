@@ -9,12 +9,12 @@ int main()
         scanf("%d",&N);
     }
     int max;
-    int foundeven = false;
+    int foundeven = False;
     for(int i = 0;i<N;i++){
         if(arr[i]%2==0){
             if(!foundeven||arr[i]>max){
                 max = arr[i];
-                foundeven = true;
+                foundeven = True;
             }
         }
     }
