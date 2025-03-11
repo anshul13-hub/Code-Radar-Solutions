@@ -16,6 +16,7 @@ int main ()
             if(arr[i]>max)
             {
                 max = arr[i];
+                printf("%d\n", max);
             }
         }
         else
@@ -26,6 +27,6 @@ int main ()
             }
         }
     }
-    printf("%d\n", max);
+    
 
 }
