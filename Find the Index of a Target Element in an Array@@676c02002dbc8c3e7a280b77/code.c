@@ -27,7 +27,7 @@ int main() {
             found = 1;  // Mark that we found at least one occurrence
         }
     }
-    print("%d",i);
+    print("%d ",i);
 
     // If no occurrences of the target element were found, print -1
     
