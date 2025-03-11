@@ -14,10 +14,10 @@ int main ()
     {
         if(arr[i]>K)
         {
-            printf("%d ",arr[i]);
+            printf("%d ",count);
             count++;
         }
 
     }
-    
+
 }
