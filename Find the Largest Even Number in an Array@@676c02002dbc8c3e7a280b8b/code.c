@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main ()
 {
     int N;
@@ -14,7 +15,7 @@ int main ()
         if(arr[i]%2==0)
         {
             if(arr[i]>max){
-                max = arr[i];
+                max = abs(arr[i]);
             }
         }
     }
