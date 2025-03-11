@@ -15,7 +15,7 @@ int main() {
             break;  
         }
     }
-    if(found == -1) {
+    if(found !=-1) {
     
         printf("%d", found + 1);
     } else {
