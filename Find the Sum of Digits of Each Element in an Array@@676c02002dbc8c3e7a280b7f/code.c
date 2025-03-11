@@ -12,7 +12,7 @@ int main ()
         int N = arr[i];
         int sum_of_digits=0;
         while(N>0){
-            sum_of_digits+=N/10
+            sum_of_digits+=N/10;
             N/=10;
         }
         printf("%d ",sum_of_digits);
