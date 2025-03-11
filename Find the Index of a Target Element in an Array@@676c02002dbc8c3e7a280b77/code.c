@@ -24,7 +24,9 @@ int main() {
             found = i;  // Store the index of T
             break;  // Exit the loop as soon as T is found
         }
+        printf(i);
     }
+    
 
     // Print the result
     if(found != -1) {
