@@ -18,6 +18,13 @@ int main ()
                 max = arr[i];
             }
         }
+        else
+        {
+            if(arr[i]!=0)
+            {
+                printf("-1");
+            }
+        }
     }
     printf("%d\n", max);
 
