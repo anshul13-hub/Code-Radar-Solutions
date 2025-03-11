@@ -10,19 +10,12 @@ int main ()
     {
         scanf("%d",&arr[i]);
     }
-    for(int i = 0;i<N;i++)
-    {
-        if(arr[i]==T)
-        {
-            printf("%d",i);
-        }
-        if(arr[i]!=T)
-        {
-            printf("-1");
+    int foundindex= -1;
+    for(int i = 0;i<N;i++){
+        if(arr[i]==T){
+            foundindex = i;
+            break;
         }
     }
-    return 0;
-
-
-
+    printf("%d\n",foundindex);
 }
