@@ -18,12 +18,12 @@ int main ()
             break;
         }
     }
-    if(found == 0)
+    if(found)
     {
-        printf("-1\n");
+        printf("%d\n",i);
     }
     else
     {
-        printf("%d\n",i+1);
+        printf("-1\n");
     }
 }
