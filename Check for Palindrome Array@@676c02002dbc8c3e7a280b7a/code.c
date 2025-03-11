@@ -8,7 +8,7 @@ int main ()
     {
         scanf("%d",&arr[i]);
     }
-    int start = 0;end = N-1;
+    int start = 0,end = N-1;
     int ispalindrome=1;
     while(start<end){
         if(arr[start]=arr[end]){
