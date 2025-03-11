@@ -23,6 +23,6 @@ int main ()
     }
     else
     {
-        printf("%d\n",i);
+        printf("%d\n",i+1);
     }
 }
