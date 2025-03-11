@@ -26,7 +26,7 @@ int main ()
     }
     else
     {
-        printf("%d",i);
+        printf("%d",arr[i]);
     }
 
 }
