@@ -10,7 +10,7 @@ int main ()
     }
     for(int i = 0;i<N;i++)
     {
-        int num = arr[i];
+        int num = abs(arr[i]);
         int sum_of_digits=0;
         while(num>0){
             sum_of_digits+=num%10;
