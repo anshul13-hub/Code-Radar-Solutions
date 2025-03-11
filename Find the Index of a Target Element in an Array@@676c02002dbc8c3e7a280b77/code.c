@@ -24,15 +24,16 @@ int main() {
             found = i;  // Store the index of T
             break;  // Exit the loop as soon as T is found
         }
-        printf(i);
     }
-    
 
     // Print the result
-    if(found != -1) {
+    if(found == -1) {
         // If T is found, print its index (add 1 for 1-based indexing)
+        printf("%d\n", found + 1);
+    } else {
+        // If T is not found, print -1
         printf("-1\n");
-    } 
+    }
 
     return 0;
 }
