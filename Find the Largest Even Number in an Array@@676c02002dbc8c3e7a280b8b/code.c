@@ -19,8 +19,13 @@ int main ()
             }
         }
     }
-    printf("%d",max);
-    else{
-    printf("-1");
+    if(max == -1)
+    {
+        printf("-1\n");
     }
+    else
+    {
+        printf("%d\n", max);
+    }
+
 }
