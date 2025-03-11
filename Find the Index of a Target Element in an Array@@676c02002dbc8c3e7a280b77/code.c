@@ -17,6 +17,7 @@ int main ()
         {
             foundindx = i;
         }
-        
+        printf("%d",i);
+
     }
 }
