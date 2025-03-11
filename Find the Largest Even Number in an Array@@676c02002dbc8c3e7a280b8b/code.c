@@ -1,27 +1,29 @@
 #include <stdio.h>
-#include <stdlib.h>
-int main ()
+int main()
 {
     int N;
     scanf("%d",&N);
     int arr[N];
-    for(int i = 0;i<N;i++)
+    for(int i= 0;i>N;i++)
     {
-        scanf("%d",&arr[i]);
+        scanf("%d",&N);
     }
-    int max = arr[0];
-    for(int i = 0;i<N;i++)
-    {
-        if(arr[i]%2==0)
-        {
-            if(arr[i]>max){
-                max = arr[i];
+    int max;
+    int foundeven = false;
+    for(int i = 0;i<N;i++){
+        if(arr[i]%2==0){
+            if(!foundeven||arr[i]>largest){
+                largest = arr[i];
+                foundeven = true;
             }
         }
-        printf("-1");
     }
-    
-        printf("%d\n",max);
+    if(foundeven)
+    {
+        printf("%d",max);
     }
-
-    
+    else
+    {
+        printf("-1\n");
+    }
+}
