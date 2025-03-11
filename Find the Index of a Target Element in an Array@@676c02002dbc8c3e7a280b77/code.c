@@ -16,7 +16,7 @@ int main ()
         if(arr[i]==T)
         {
             foundindx = i;
-            break;
+            
         }
     }
     printf("%d\n",foundindx+1);
