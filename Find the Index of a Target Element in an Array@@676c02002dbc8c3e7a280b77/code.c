@@ -19,6 +19,6 @@ int main ()
             break;
         }
     }
-    printf("%d\n",i);
+    printf(i);
 
 }
