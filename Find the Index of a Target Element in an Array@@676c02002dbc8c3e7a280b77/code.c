@@ -29,7 +29,7 @@ int main() {
     // Print the result
     if(found !=-1) {
         // If T is found, print its index (add 1 for 1-based indexing)
-        printf("%d\n", i + 1);
+        printf( i + 1);
     } else {
         // If T is not found, print -1
         printf("-1\n");
