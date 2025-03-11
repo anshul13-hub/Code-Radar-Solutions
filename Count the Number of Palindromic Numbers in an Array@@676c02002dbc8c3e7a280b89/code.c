@@ -12,7 +12,7 @@ int main ()
         int num = arr[i],original=num,rev=0,rem;
         while(num>0)
         {
-            rem = n %10;
+            rem = num %10;
             rev = rfev*10+rem;
             num /=10;
         }
@@ -22,5 +22,5 @@ int main ()
         }
     }
     printf("%d",count);
-    
+
 }
