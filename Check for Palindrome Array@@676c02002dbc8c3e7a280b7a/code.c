@@ -8,10 +8,10 @@ int main ()
     {
         scanf("%d",&arr[i]);
     }
-    int start = 0,end = N-1;
+    int start = 0,end = N-1-i;
     int palindrome=1;
     while(start<end){
-        if(arr[start]=arr[end]){
+        if(arr[start]!=arr[end]){
             palindrome=0;
             break;
 
