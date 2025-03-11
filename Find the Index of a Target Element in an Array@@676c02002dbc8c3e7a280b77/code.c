@@ -10,14 +10,15 @@ int main ()
     {
         scanf("%d",&arr[i]);
     }
-    int foundindx= 0;
+    int foundindx= -1;
     for(int i = 0;i<N;i++)
     {
         if(arr[i]==T)
         {
             foundindx = i;
+            break;
         }
-        printf("%d",i);
-
     }
+    printf("%d\n",foundindx);
+
 }
