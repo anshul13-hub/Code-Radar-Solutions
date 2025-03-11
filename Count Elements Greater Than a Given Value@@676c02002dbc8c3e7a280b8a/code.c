@@ -14,7 +14,7 @@ int main ()
     {
         if(arr[i]>K)
         {
-            printf("%d ",count);
+            printf("%d",count);
             count++;
         }
 
