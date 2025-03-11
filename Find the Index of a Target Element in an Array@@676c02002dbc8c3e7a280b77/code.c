@@ -1,24 +1,39 @@
 #include <stdio.h>
-int main ()
-{
+
+int main() {
     int N;
-    scanf("%d",&N);
-    int arr[N];
+
+    // Input the size of the array
+    scanf("%d", &N);
+
+    int arr[N];  // Declare an array of size N
+
     int T;
-    scanf("%d",&T);
-    for(int i = 0;i<N;i++)
-    {
-        scanf("%d",&arr[i]);
+
+    // Input the target element to find
+    scanf("%d", &T);
+
+    // Input the array elements
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);  // Fill the array with input elements
     }
-    int found = 0;
-    for(int i = 0;i<N;i++){
-        if(arr[i]==T){
-            printf("%d ",i);
-            found = 1;
+
+    int found = 0;  // To check if any index was found
+
+    // Search for the target element and print all indices where it occurs
+    for (int i = 0; i < N; i++) {
+        if (arr[i] == T) {  // Check if the element matches the target
+            printf("%d ", i);  // Print the index of the occurrence
+            found = 1;  // Mark that we found at least one occurrence
         }
     }
-    if(!found){
+
+    // If no occurrences of the target element were found, print -1
+    if (!found) {
         printf("-1\n");
+    } else {
+        printf("\n");  // If found, print a new line after the indices
     }
-    
+
+    return 0;
 }
