@@ -15,14 +15,13 @@ int main ()
         if(arr[i]==T)
         {
             T = i;
-           
             break;
             
         }
          printf("%d",T+1);
+         if(arr[i]!=T)
+         {
+            printf("-1");
+         }
     }
-    
-
-    
-
 }
