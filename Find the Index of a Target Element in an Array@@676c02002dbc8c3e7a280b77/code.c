@@ -19,11 +19,8 @@ int main ()
             break;
             
         }
-         printf("%d\n",T+1);
+         printf("%d",T+1);
     }
-        {
-            printf("-1");
-        }
     
 
     
