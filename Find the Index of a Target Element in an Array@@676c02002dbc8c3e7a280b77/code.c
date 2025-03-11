@@ -8,14 +8,14 @@ int main() {
     for(int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
-    int found = -1;  
+    int found = 0;  
     for(int i = 0; i < N; i++) {
         if(arr[i] == T) {
             found = i; 
             break;  
         }
     }
-    if(found !=-1) {
+    if(found == 0) {
     
         printf("%d", found + 1);
     } else {
