@@ -16,10 +16,12 @@ int main ()
         if(arr[i]==T)
         {
             T = i;
-            printf("%d\n",T+1);
+           
             break;
             
         }
+         printf("%d\n",T+1);
+    }
         else
         {
             printf("-1");
