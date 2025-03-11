@@ -19,4 +19,8 @@ int main ()
         }
     }
     printf("%d",max);
+    else
+    {
+        printf("-1\n");
+    }
 }
