@@ -13,7 +13,7 @@ int main ()
         while(num>0)
         {
             rem = num %10;
-            rev = rfev*10+rem;
+            rev = rev*10+rem;
             num /=10;
         }
         if(original==rev)
