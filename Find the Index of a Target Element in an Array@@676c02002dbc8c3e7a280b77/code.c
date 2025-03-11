@@ -16,6 +16,7 @@ int main ()
         if(arr[i]==T)
         {
             T = i;
+            break;
             
         }
     }
