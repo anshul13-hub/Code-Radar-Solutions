@@ -20,8 +20,5 @@ int main ()
     if(!found){
         printf("-1\n");
     }
-    else
-    {
-        printf("\n");
-    }
+    
 }
