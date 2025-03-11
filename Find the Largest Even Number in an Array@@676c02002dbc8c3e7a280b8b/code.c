@@ -12,7 +12,7 @@ int main()
     int foundeven = false;
     for(int i = 0;i<N;i++){
         if(arr[i]%2==0){
-            if(!foundeven||arr[i]>largest){
+            if(!foundeven||arr[i]>max){
                 largest = arr[i];
                 foundeven = true;
             }
