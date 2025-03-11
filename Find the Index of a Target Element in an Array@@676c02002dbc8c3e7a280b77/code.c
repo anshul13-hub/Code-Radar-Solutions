@@ -20,7 +20,7 @@ int main ()
     }
     if(found)
     {
-        printf("%d\n",i);
+        printf("%d\n",i+1);
     }
     else
     {
