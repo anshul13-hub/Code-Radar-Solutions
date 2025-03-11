@@ -15,10 +15,10 @@ int main ()
     {
         if(arr[i]==T)
         {
-            foundindx = i;
+            T = i;
             
         }
     }
-    printf("%d\n",foundindx+1);
+    printf("%d\n",T+1);
 
 }
