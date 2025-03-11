@@ -22,7 +22,6 @@ int main ()
         }
          printf("%d\n",T+1);
     }
-        else
         {
             printf("-1");
         }
