@@ -9,17 +9,17 @@ int main ()
         scanf("%d",&arr[i]);
     }
     int start = 0,end = N-1;
-    int ispalindrome=1;
+    int palindrome=1;
     while(start<end){
         if(arr[start]=arr[end]){
-            ispalindrome=0;
+            palindrome=0;
             break;
 
         }
         start++;
         end--;
     }
-    if(ispalindrome)
+    if(palindrome)
     {
         printf("YES");
     }
