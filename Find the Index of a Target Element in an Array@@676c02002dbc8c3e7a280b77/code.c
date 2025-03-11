@@ -12,15 +12,17 @@ int main ()
         scanf("%d",&arr[i]);
     }
     int found = 0;
+    int index = -1;
     for(int i = 0;i<N;i++){
         if(arr[i]==T){
             found = 1;
+            index = i+1;
             break;
         }
     }
     if(found)
     {
-        printf("%d\n",i+1);
+        printf("%d\n",index);
     }
     else
     {
