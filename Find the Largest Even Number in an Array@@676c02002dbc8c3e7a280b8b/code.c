@@ -9,24 +9,20 @@ int main ()
         scanf("%d",&arr[i]);
     }
     int max = arr[0];
-    for(int i = 0;i<N;i++)
-    {
+    for(int i = 0;i<N;i++){
         if(arr[i]%2==0)
         {
-            if(arr[i]>max)
-            {
-                max = arr[i];
-                printf("%d\n", max);
-            }
-        }
-        else
-        {
-            if(arr[i]!=0)
-            {
-                printf("-1");
+            if(arr[i]>max){
+                max == arr[i];
             }
         }
     }
-    
+    printf("%d\n",max);
+}
+
+
+
+
+
 
 }
