@@ -20,7 +20,7 @@ int main ()
             break;
         }
     }
-    if(found)
+    if(found==1)
     {
         printf("%d\n",index);
     }
