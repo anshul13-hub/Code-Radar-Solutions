@@ -22,7 +22,7 @@ int main() {
     for(int i = 0; i < N; i++) {
         if(arr[i] == T) {
             found = i;  // Store the index of T
-            break;  // Exit the loop as soon as T is found
+              // Exit the loop as soon as T is found
         }
     }
 
