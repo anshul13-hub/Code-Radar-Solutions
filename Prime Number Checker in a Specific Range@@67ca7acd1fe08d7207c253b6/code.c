@@ -32,10 +32,10 @@ void printPrimesInRange(int a, int b) {
 int main() {
     int a, b;
 
-    // Read input values for the range
-    printf("Enter the range (a b): ");
+   
+   
     if (scanf("%d %d", &a, &b) != 2 || a > b) {
-        printf("Invalid input. Please ensure that a <= b and both are integers.\n");
+       
         return 1;
     }
 
