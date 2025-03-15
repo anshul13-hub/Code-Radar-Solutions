@@ -24,8 +24,10 @@ int main() {
         } else if (arr[i] < smin && arr[i] != min) {
             smin = arr[i];  // Update second minimum
         }
+                printf("%d\n", smin);
     }
+    printf("-1");
 
 
-        printf("%d\n", smin);
+
 }
