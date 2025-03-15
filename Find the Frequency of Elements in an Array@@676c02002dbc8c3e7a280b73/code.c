@@ -20,11 +20,13 @@ int main ()
             if(arr[i]==arr[j])
             {
                 count++;
-                if(arr[j]==-1);
+                arr[j]==-1;
 
             }
         }
-        printf("%d :%d",arr[i],count);
+        printf("%d %d\n",arr[i],count);
+       
     }
+    printf("\n");
 
 }
