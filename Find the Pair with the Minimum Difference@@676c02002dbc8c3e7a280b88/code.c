@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main ()
 {
     int N;
@@ -21,5 +22,6 @@ int main ()
             }
         }
     }
-    printf("%d",min_diff);
+    printf("%d %d\n", pair1,pair2);
+
 }
