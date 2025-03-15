@@ -29,6 +29,3 @@ int main ()
         printf("NO");
     }
 }
-
-    }
-}
