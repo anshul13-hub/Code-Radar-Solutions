@@ -14,7 +14,11 @@ int main() {
     
         scanf("%d", &arr[i]);
     }
+    K = K%N;
+    for(int i = 0;i<K;i++)
+    {
     int last = arr[N-1];
+    }
     for(int i =N-1;i>0;i--){
         arr[i] = arr[i-1];
     }
