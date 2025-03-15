@@ -33,7 +33,10 @@ int main() {
                 }
             }
 
-            printf("%d",count);
+            // If the frequency is greater than 1, print the element
+            if (count > 1) {
+                printf("%d", count);
+            }
         }
     }
 
