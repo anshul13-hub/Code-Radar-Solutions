@@ -21,15 +21,19 @@ int main() {
     for (int i = 0; i < N; i++) {
         for (int j = i + 1; j < N; j++) {
             if (arr[i] + arr[j] == T) {
-                // Print the pair and mark that a pair was found
-                printf("%d %d\n", arr[i], arr[j]);
-                found = 1;
+                // Print the pair only if arr[i] <= arr[j] to avoid duplicates
+                if (arr[i] <= arr[j]) {
+                    printf("%d %d\n", arr[i], arr[j]);
+                    found = 1;
+                }
             }
         }
     }
 
-  
-    
+    // If no pair was found, print a message
+    if (!found) {
+        printf("No pairs found\n");
+    }
 
     return 0;
 }
