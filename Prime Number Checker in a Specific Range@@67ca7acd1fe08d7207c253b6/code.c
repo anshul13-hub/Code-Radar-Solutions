@@ -29,18 +29,3 @@ void printPrimesInRange(int a, int b) {
     }
 }
 
-int main() {
-    int a, b;
-
-   
-   
-    if (scanf("%d %d", &a, &b) != 2 || a > b) {
-       
-        return 1;
-    }
-
-    // Call the function to print primes in the range
-    printPrimesInRange(a, b);
-
-    return 0;
-}
