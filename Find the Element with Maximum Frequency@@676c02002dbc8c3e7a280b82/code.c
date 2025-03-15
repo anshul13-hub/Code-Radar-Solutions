@@ -1,34 +1,41 @@
 #include <stdio.h>
-int main ()
-{
-    int N,count = 0;
-  
+
+int main() {
+    int N;
+
+    // Input size of the array
     scanf("%d", &N);
 
     int arr[N];
 
-    
+    // Input the elements into the array
     for (int i = 0; i < N; i++) {
-   
         scanf("%d", &arr[i]);
     }
-    for(int i = 0;i<N;i++)
-    {
-        int foundduplicate = 0;
-        for(int j = i+1;j<N;j++){
-            if(arr[i]==arr[j]){
-                foundduplicate = 1;
-                arr[j] = -1;
+
+    // Traverse through the array to find elements with multiple frequencies
+    for (int i = 0; i < N; i++) {
+        // Skip the elements that have already been counted
+        int isDuplicate = 0;
+        for (int j = 0; j < i; j++) {
+            if (arr[i] == arr[j]) {
+                isDuplicate = 1;
+                break;
             }
         }
-        if(foundduplicate&&arr[i]!=-1){
-            count++;
+
+        // If the element is not a duplicate, count its frequency
+        if (!isDuplicate) {
+            int count = 0;
+            for (int j = 0; j < N; j++) {
+                if (arr[i] == arr[j]) {
+                    count++;
+                }
+            }
+
+            printf("%d",count);
         }
-
-
     }
-    printf("%d\n", count);
-    
 
-
+    return 0;
 }
