@@ -21,7 +21,7 @@ int main ()
             {
                 int x = arr[i];
                 int y = arr[j];
-                printf("%d %d\n",x, y);
+                printf("%d %d\n",arr[i], arr[j]);
             }
         }
     }
