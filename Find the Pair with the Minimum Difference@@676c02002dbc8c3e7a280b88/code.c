@@ -1,38 +1,50 @@
 #include <stdio.h>
-#include <stdlib.h>  // For abs() function
+#include <stdlib.h>
 
 int main() {
     int N;
-
-    // Input size of the array
+    
+    // Input the size of the array
     scanf("%d", &N);
 
+    // If there's only one element, return -1
+    if (N <= 1) {
+        printf("-1\n");
+        return 0;
+    }
+
     int arr[N];
-    
-    // Input the elements into the array
+
+    // Input the array elements
     for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
-    
-    // Initialize minimum difference to a large value
-    int min_diff = abs(arr[1] - arr[0]);
-    int pair1 = arr[0], pair2 = arr[1];
 
-    // Iterate through all pairs and find the pair with the minimum difference
+    // Initialize the minimum difference as a large number
+    int min_diff = __INT_MAX__;
+    int first = -1, second = -1;
+
+    // Brute-force comparison of each pair
     for (int i = 0; i < N - 1; i++) {
         for (int j = i + 1; j < N; j++) {
             int diff = abs(arr[i] - arr[j]);
             if (diff < min_diff) {
                 min_diff = diff;
-                pair1 = arr[i];
-                pair2 = arr[j];
+                first = arr[i];
+                second = arr[j];
             }
         }
     }
 
-    // Output the result
-    printf("%d %d\n", pair1, pair2);
- 
+    // Ensure first is smaller than second for ascending order
+    if (first > second) {
+        int temp = first;
+        first = second;
+        second = temp;
+    }
+
+    // Output the pair in ascending order
+    printf("%d %d\n", first, second);
 
     return 0;
 }
