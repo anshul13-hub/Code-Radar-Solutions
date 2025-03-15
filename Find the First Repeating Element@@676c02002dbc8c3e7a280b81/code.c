@@ -11,7 +11,7 @@ int main ()
     int found = 0;
     for(int i =0;i<N;i++)
     {
-        found[i] = 0;
+        found[arr[i]] = 0;
     }
     for(int i = 0;i<N;i++)
     {
