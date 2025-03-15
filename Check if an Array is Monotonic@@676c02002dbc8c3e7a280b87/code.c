@@ -20,12 +20,9 @@ int main ()
             descreasing = 0;
         }
     }
-    if(increasing)
+    if(increasing||descreasing)
     {
         printf("YES\n");
     }
-    else
-    {
-        printf("NO");
-    }
+    
 }
