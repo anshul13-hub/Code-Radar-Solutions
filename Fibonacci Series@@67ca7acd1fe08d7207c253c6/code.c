@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Function to print Fibonacci series up to the nth term
-void printFibonacciSeries(int n) {
+void fibonacciSeries(int n) {
     int a = 0, b = 1, nextTerm;
 
     if (n <= 0) {
