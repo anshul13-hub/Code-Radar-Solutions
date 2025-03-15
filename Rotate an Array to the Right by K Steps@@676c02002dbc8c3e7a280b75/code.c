@@ -7,10 +7,7 @@ int main() {
     scanf("%d", &N);
     
     // If the array size is 1 or less, we can't rotate it
-    if (N <= 1) {
-        printf("-1\n");
-        return 0;
-    }
+
 
     int arr[N];
 
