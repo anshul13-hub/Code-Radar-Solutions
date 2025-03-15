@@ -30,10 +30,6 @@ int main() {
         }
     }
 
-    // If no pair was found, print a message
-    if (!found) {
-        printf("No pairs found\n");
-    }
 
     return 0;
 }
