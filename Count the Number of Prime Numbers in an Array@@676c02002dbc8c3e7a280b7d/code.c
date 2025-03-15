@@ -25,15 +25,15 @@ int main ()
         {
             scanf("%d",&arr[i]);
         }
-        int isprimecount = 0;
+        int count = 0;
         for(int i = 0;i<N;i++)
         {
             if(isprime(arr[i]))
             {
-                isprimecount++;
+                count++;
             }
         }
     }
-        printf("%d",isprimecount);
+        printf("%d",count);
     
 }
