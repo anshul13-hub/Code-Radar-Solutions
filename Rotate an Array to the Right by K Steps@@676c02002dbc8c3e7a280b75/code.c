@@ -1,4 +1,4 @@
-Loading Code...#include <stdio.h>
+#include <stdio.h>
 
 int main() {
     int N, k;
