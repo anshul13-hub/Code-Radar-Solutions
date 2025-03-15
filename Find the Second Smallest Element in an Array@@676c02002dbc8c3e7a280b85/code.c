@@ -1,28 +1,31 @@
 #include <stdio.h>
 #include <limits.h>
-int main ()
-{
+
+int main() {
     int N;
-    scanf("%d",&N);
+    scanf("%d", &N);
+
+    int arr[N];
+    
+    // Read the elements of the array
+    for(int i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // Initialize min and smin to the largest possible integer
     int min = INT_MAX;
     int smin = INT_MAX;
 
-    int arr[N];
-    for(int i = 0;i<N;i++)
-    {
-        scanf("%d",&arr[i]);
-    }
-    for(int i = 0;i<N;i++)
-    {
-        if(min >arr[i])
-        {
-            smin = min ;
-            min = arr[i];
-        }
-        else if(arr[i]<smin&&arr[i]!=min)
-        {
-            min = arr[i];
+    // Traverse the array to find the minimum and second minimum
+    for(int i = 0; i < N; i++) {
+        if (arr[i] < min) {
+            smin = min;  // Update second minimum before updating min
+            min = arr[i];  // Update min to the new smaller value
+        } else if (arr[i] < smin && arr[i] != min) {
+            smin = arr[i];  // Update second minimum
         }
     }
-    printf("%d",smin);
+
+
+        printf("%d\n", smin);
 }
