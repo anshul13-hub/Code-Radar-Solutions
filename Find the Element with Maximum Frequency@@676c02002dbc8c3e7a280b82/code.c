@@ -2,15 +2,14 @@
 int main ()
 {
     int N,count = 0;
-    printf("Enter the number of elements in the array: ");
+  
     scanf("%d", &N);
 
-    int arr[n];
+    int arr[N];
 
-    // Input the elements of the array
-    printf("Enter the elements of the array:\n");
+    
     for (int i = 0; i < N; i++) {
-        printf("Element %d: ", i + 1);
+   
         scanf("%d", &arr[i]);
     }
     for(int i = 0;i<N;i++)
