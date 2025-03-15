@@ -20,7 +20,7 @@ int main ()
             if(arr[i]==arr[j])
             {
                 count++;
-                if(arr[j]==-1)
+                if(arr[j]==-1);
 
             }
         }
