@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main ()
 {
-    int N;
+    int N,count;
     scanf("%d",&N);
     int arr[N];
     for(int i = 0;i<N;i++)
@@ -11,7 +11,6 @@ int main ()
     for(int i = 0;i<N;i++)
     {
         int found = 0;
-        int count = 1;
         for(int j = i+1;j<N;j++)
         {
             if(arr[i]==arr[j])
