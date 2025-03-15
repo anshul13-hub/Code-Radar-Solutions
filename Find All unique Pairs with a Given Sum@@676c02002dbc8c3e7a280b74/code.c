@@ -18,7 +18,7 @@ int main() {
 
     // A simple brute force approach to find all unique pairs
     int found = 0; // Flag to check if any pair was found
-    for (int i = 0; i < N - 1; i++) {
+    for (int i = 0; i < N; i++) {
         for (int j = i + 1; j < N; j++) {
             if (arr[i] + arr[j] == T) {
                 // Print the pair and mark that a pair was found
