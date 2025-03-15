@@ -1,36 +1,32 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    
-    // Input the size of the array
-    scanf("%d", &n);
+    int N;
 
-    int arr[n];
-    
+    // Input size of the array
+    scanf("%d", &N);
+
+    int arr[N];
+
     // Input the elements of the array
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
 
+    int max_product = arr[0] * arr[1]; // Initialize with the product of the first two elements
 
-    int max1 = arr[0], max2 = arr[1];
-
-    for (int i = 1; i < n; i++) {
-      
-        if (arr[i] > max1) {
-            max2 = max1;
-            max1 = arr[i];
-        } else if (arr[i] > max2) {
-            max2 = arr[i];
+    // Iterate through all pairs of elements to find the maximum product
+    for (int i = 0; i < N; i++) {
+        for (int j = i + 1; j < N; j++) {
+            int product = arr[i] * arr[j];
+            if (product > max_product) {
+                max_product = product; // Update if a larger product is found
+            }
         }
-
-        
-        
-    int product1 = max1 * max2;  
-    printf("%d",product1);
     }
-   
-    
+
+    // Output the maximum product
+    printf("%d\n", max_product);
+
     return 0;
 }
