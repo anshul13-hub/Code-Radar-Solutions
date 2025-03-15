@@ -4,8 +4,9 @@ int main ()
 {
     int N;
     scanf("%d",&N);
-    int min = INT_MIN;
-    int smin= INT_MIN;
+    int min = INT_MAX;
+    int smin = INT_MAX;
+
     int arr[N];
     for(int i = 0;i<N;i++)
     {
