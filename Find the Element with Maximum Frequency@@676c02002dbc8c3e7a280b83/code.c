@@ -21,7 +21,7 @@ int main ()
                 count++;
             }
         }
-        if(count>maxfreq||cont==maxfreq&&arr[i]<result){
+        if(count>maxfreq||count==maxfreq&&arr[i]<result){
             maxfreq = count;
             result = arr[i];
         }
