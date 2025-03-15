@@ -5,6 +5,8 @@ int main() {
 
    
     scanf("%d", &N);
+    int K;
+    scanf("%d", &K);
 
     int arr[N];
 
