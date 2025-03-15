@@ -20,7 +20,7 @@ int main ()
             descreasing = 0;
         }
     }
-    if(increasing||descreasing)
+    if(increasing)
     {
         printf("YES\n");
     }
