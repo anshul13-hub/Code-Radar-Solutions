@@ -31,11 +31,12 @@ void printPrimesInRange(int a, int b) {
 
 int main() {
     int a, b;
+    scanf("%d %d"&a,&b);
 
-    // Read input values for the range
+    
     
 
-    // Call the function to print primes in the range
+    
     printPrimesInRange(a, b);
 
     return 0;
