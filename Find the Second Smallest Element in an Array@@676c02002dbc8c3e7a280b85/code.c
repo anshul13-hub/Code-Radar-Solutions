@@ -23,15 +23,14 @@ int main() {
             min = arr[i];  // Update min to the new smaller value
         } else if (arr[i] < smin && arr[i] != min) {
             smin = arr[i];  // Update second minimum
-
-     printf("%d\n", smin);
         }
     }
-    printf("-1\n");
-     
-
-
-
-
-
+    if(smin == INT_MAX)
+    {
+        printf("-1");
+    }
+    else
+    {
+        printf("%d\n",smin);
+    }
 }
