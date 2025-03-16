@@ -21,15 +21,17 @@ int main() {
     for (int i = 0; i < N; i++) {
         for (int j = i + 1; j < N; j++) {
             if (arr[i] + arr[j] == T) {
-                // Print the pair only if arr[i] <= arr[j] to avoid duplicates
-                if (arr[i] <= arr[j]) {
-                    printf("%d %d\n", arr[i], arr[j]);
-                    found = 1;
+                if(arr[i]<arr[j])
+                {
+                    printf("%d %d\n",arr[i],arr[j]);
                 }
+                else 
+                {
+                    printf("%d %d\n",arr[j],arr[i]);
+                }
+                arr[i]=arr[j]=-1;
             }
         }
     }
-
-
     return 0;
 }
