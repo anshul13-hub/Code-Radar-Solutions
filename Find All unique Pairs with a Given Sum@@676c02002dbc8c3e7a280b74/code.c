@@ -25,11 +25,7 @@ int main() {
                 {
                     printf("%d %d\n",arr[i],arr[j]);
                 }
-                else 
-                {
-                    printf("%d %d\n",arr[j],arr[i]);
-                }
-                arr[i]=arr[j]=-1;
+                
             }
         }
     }
