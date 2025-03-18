@@ -23,13 +23,13 @@ int main() {
     }
 
     // Finding the median
-    float median;
+    int  median;
     if (N % 2 == 0) {
         median = (arr[(N / 2) - 1] + arr[N / 2]) / 2.0;
     } else {
         median = arr[N / 2];
     }
-    printf("%.2f\n", median);
+    printf("%d\n", median);
 
     return 0;
 }
