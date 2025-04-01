@@ -23,6 +23,8 @@ int main() {
             if (arr[i] + arr[j] == T) {
                 if(arr[i]<arr[j])
                 {
+                   
+                    found =1;
                     printf("%d %d\n",arr[i],arr[j]);
                 }
                 
