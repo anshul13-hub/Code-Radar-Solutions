@@ -6,9 +6,10 @@ int main ()
     
     int count = 0;
      fgets(str, sizeof(str), stdin);
-     char ch = tolower(str[i]); 
+     
      for(int i = 0;str[i]!=0;i++)
      {
+        char ch = tolower(str[i]); 
         if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
         {
             count++;
