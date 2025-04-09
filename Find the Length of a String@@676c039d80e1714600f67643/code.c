@@ -8,6 +8,6 @@ int main ()
     {
         length++;
     }
-    printf("%d\n ",length);
+    printf("%d\n",length);
 
 }
