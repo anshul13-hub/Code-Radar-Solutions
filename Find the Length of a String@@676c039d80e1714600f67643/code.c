@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    char str[100];  // Declare a character array to hold the string
+    char str[100]; 
     int length = 0;
 
-    // Read the input string
-    scanf("%s", str);  // This reads a string but stops at the first space
+    
+    scanf("%s", str);  
 
-    // Loop through the string until the null terminator is found
-    while (str[length] != '\0') {
+    
+    while (str[length] != '\0'&&str[length]!='\n') {
         length++;
     }
 
