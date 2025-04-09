@@ -1,12 +1,13 @@
 #include <stdio.h>
 int main ()
 {
-    char str;
-    scanf("%c",&str);
+    char str[100];
     int length = 0;
-    while(length!='\0')
+    scanf("%c",str);
+    while(str[length]!='\0')
     {
         length++;
     }
-    printf("%d",length);
+    printf("%d\n",length);
+
 }
