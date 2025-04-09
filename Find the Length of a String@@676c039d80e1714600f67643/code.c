@@ -13,7 +13,7 @@ int main() {
     }
 
    
-    printf("%d\n", length);
+    printf("%d", length);
 
     return 0;
 }
